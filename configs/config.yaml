@@ -1,0 +1,17 @@
+spin_rate: 100
+
+tcp: true
+ip: "192.168.1.200"
+port: 1502
+map_frame: "map"
+pose_frame: "base_link"
+pub_frame: "odom"
+
+num_retry: -1
+
+msg_type: 1               # 1: odometry, 2: Encoder
+msg_type_version: 4       # 4: velocity-based. 5: position-based
+odom_topic: "odom"
+
+# msg_type: 2
+# encoder_topic: "encoder"

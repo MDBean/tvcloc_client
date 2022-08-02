@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="use_sim_time" value="false"/>
+    <node pkg="modbus_node" type="modbus_node_master" name="modbus_node_master" output="screen">
+        <param name="ip" type="str" value="127.0.0.1"/>
+        <param name="slave_id" type="int" value="18"/>
+        <param name="spin_rate" type="int" value="100"/>
+        <param name="port" type="int" value="1502"/>
+        <param name="tcp" type="bool" value="true"/>
+        <rosparam param="regs_addr">[0,1,2,3,4,5,6,7,8]</rosparam>
+    </node>
+</launch>
